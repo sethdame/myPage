@@ -4,13 +4,15 @@ body {
 	margin: 0;
 }
 * {
-	background-color: #333333;
+	/*background-color: #333333;*/
 	font-family: impact;
 	color: white;
 }
 .container {
 	text-align: center;
 	margin: auto;
+	width: auto;
+	height: auto;
 }
 canvas {
 	width: auto;
@@ -31,8 +33,10 @@ canvas {
 	margin-top: -20px;
 	margin: auto;
 }
-span {
-
+#phone {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
 }
 #projects {
 	padding-top: 50px;
@@ -41,16 +45,84 @@ span {
 p {
 	font-size: 16px;
 }
-a {
+i:hover, #phone:hover {
+  color: red;
   -o-transition:.4s;
   -ms-transition:.4s;
   -moz-transition:.4s;
   -webkit-transition:.4s;
   transition:.4s;
-  }
-
-a:hover {
-  color: red;
+}
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: impact;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: impact;
+}
+section.module p:last-child {
+  margin-bottom: 12px;
+  font-family: impact;
+}
+section.module.content {
+  padding: 10px 0;
+  margin: 20px;
+  background-color: #333333;
+}
+section.module.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 35px;
+  line-height: 400px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: impact;
+  margin: 0;
+}
+section.module.parallax-1 {
+  background-image: url("imgs/milkyisland.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("imgs/gasandfire.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("imgs/sandstone.jpg");
+}
+@media all {
+  section.module.parallax h1 {
+    font-size: 30px;
+	}
 }
 
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 70px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 100px;
+  }
+}
 /*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/
