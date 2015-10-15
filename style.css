@@ -3,14 +3,18 @@ body {
 	height: 100%;
 	margin: 0;
 }
+* {
+	background-color: #333333;
+	font-family: impact;
+	color: white;
+}
+.container {
+	text-align: center;
+	margin: auto;
+}
 canvas {
 	width: auto;
 	height: auto;
-	}
-
-* {
-	background-color: #99CCFF;
-	font-family: impact;
 }
 #header {
 	text-align: center;
@@ -23,22 +27,30 @@ canvas {
 	margin-top: 12px;
 	margin-bottom: 12px;
 }
-.container {
-	margin-top: -5px;
-	text-align: center;
-	margin: auto;
-}
 #main {
 	margin-top: -20px;
 	margin: auto;
 }
+span {
+
+}
 #projects {
-	display: inline-block;
 	padding-top: 50px;
 	margin: auto;
 }
 p {
 	font-size: 16px;
+}
+a {
+  -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+  }
+
+a:hover {
+  color: red;
 }
 
 /*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/
