@@ -14,10 +14,15 @@
 </head>
 <body ng-app='SethsApp'>
 <header>
-	<section>
+	<section class="module parallax parallax-1">
 		<div id="header">
 			<canvas id="myCanvas"></canvas>
-			<h1 id="welcome">Welcome to My Page!</h1>
+		</div>
+	</section>
+</header>
+	<section id="meContent">
+	<div class="container" id="main">
+		<h1 class="welcome">Welcome to My Page!</h1>
 			<div class="social">
 				<a class="twitter" href="http://twitter.com/Sdame55"><i class="fa fa-twitter-square fa-3x"></i></a>
 				<a class="linkedin" href="https://www.linkedin.com/pub/seth-dame/b0/296/a2"><i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -25,10 +30,8 @@
 				<a class="email" href="mailto:seth.e.dame@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a>
 			</div>
 			<div><span><a href="tel:6176333218">617.633.3218</a></span></div>
-		</div>
 	</section>
-</header>
-	<section ng-controller='MainController' class="main">
+	<section ng-controller='MainController' class="">
 		<div id="proj">
 			<h2>Search SoundCloud</h2>
 			<p>Connect to SoundCloud and search for a User (runawayak is me :))</p>

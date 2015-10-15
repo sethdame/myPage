@@ -1,5 +1,4 @@
 body {
-	background-color: #99CCFF;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -7,11 +6,11 @@ body {
 canvas {
 	width: auto;
 	height: auto;
-	background-color: #99CCFF;
 	}
 
 * {
 	background-color: #99CCFF;
+	font-family: impact;
 }
 #header {
 	text-align: center;
@@ -19,12 +18,14 @@ canvas {
 	height: 100%;
 	width: 100%;
 }
-#welcome {
+#main {
+	margin-top: -20px;
+}
+.container {
 	margin-top: -5px;
-	font-family: impact;
+	text-align: center;
 }
 #proj {
-	font-family: impact;
 	display: inline-block;
 	padding-top: 50px;
 	margin: 10px 20px 10px 20px;
@@ -33,9 +34,9 @@ canvas {
 	float: right;
 }
 .resume {
+	text-align: center;
 	height: 100%;
 	width: 100%;
-	text-align: center;
 }
 p {
 	font-size: 16px;
@@ -43,7 +44,6 @@ p {
 .social {
 	margin-top: 12px;
 	margin-bottom: 12px;
-	background-color: black;
 }
 
 /*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/
