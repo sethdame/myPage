@@ -12,40 +12,55 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
 </head>
-<body ng-app='SethsApp'>
+<body ng-app='SethsApp' ng-controller='MainController'>
 <header>
 	<section class="module parallax parallax-1">
-		<div id="header">
+		<div class="container" id="header">
 			<canvas id="myCanvas"></canvas>
 		</div>
 	</section>
 </header>
-	<section id="meContent">
+
+<section id="meContent">
 	<div class="container" id="main">
-		<h1 class="welcome">Welcome to My Page!</h1>
-			<div class="social">
-				<a class="twitter" href="http://twitter.com/Sdame55"><i class="fa fa-twitter-square fa-3x"></i></a>
-				<a class="linkedin" href="https://www.linkedin.com/pub/seth-dame/b0/296/a2"><i class="fa fa-linkedin-square fa-3x"></i></a>
-				<a class="github" href="https://github.com/sethdame"><i class="fa fa-github fa-3x"></i></a>
-				<a class="email" href="mailto:seth.e.dame@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a>
-			</div>
-			<div><span><a href="tel:6176333218">617.633.3218</a></span></div>
-	</section>
-	<section ng-controller='MainController' class="">
-		<div id="proj">
+		<h1 id="welcome"><span>Welcome to My Page!</span></h1>
+		<div class="social">
+			<a class="twitter" href="http://twitter.com/Sdame55"><i class="fa fa-twitter-square fa-3x"></i></a>
+			<a class="linkedin" href="https://www.linkedin.com/pub/seth-dame/b0/296/a2"><i class="fa fa-linkedin-square fa-3x"></i></a>
+			<a class="github" href="https://github.com/sethdame"><i class="fa fa-github fa-3x"></i></a>
+			<a class="email" href="mailto:seth.e.dame@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a>
+		</div>
+		<div><span><a href="tel:6176333218">617.633.3218</a></span></div>
+		<div>
+			<p>This is my portfolio site. Here you will find my projects and resume. Built with </p>
+		</div>
+	</div>
+</section>
+
+<section class="module parallax parallax-2">
+	<div class="container">
+		<h1>Projects</h1>
+	</div>
+</section>
+
+<section id="projects">
+	<div class="container" id="proj">
+		<div id="sound">
 			<h2>Search SoundCloud</h2>
 			<p>Connect to SoundCloud and search for a User (runawayak is me :))</p>
 		</div>
-		<div id="proj" class="chat">
+		<div id="chat">
 			<h2>The Chatroom</h2>
 			<p>Leave me or anyone else a message</p>
 		</div>
-	</section>
-	<section>
-		<div id="proj" class="resume">
-			<h3 id="resume">Resume</h3>
-		</div>
-	</section>
+	</div>
+</section>
+
+<section class="module parallax parallax-3">
+	<div id="proj" class="resume">
+		<h3 id="resume">Resume</h3>
+	</div>
+</section>
 	
 
 	<!-- <div ng-repeat='item in items'>{{item}}</div> -->
