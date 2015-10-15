@@ -1,0 +1,20 @@
+canvas {
+	width: auto;
+	height: auto;
+	background-color: #99CCFF;
+	}
+
+* {
+	background-color: #99CCFF;
+}
+#header {
+	text-align: center;
+	background-color: #00B2B2;
+	height: 100%;
+	width: 100%;
+}
+#welcome {
+	margin-top: -5px;
+}
+
+/*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/
