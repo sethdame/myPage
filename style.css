@@ -33,10 +33,17 @@ canvas {
 	float: right;
 }
 .resume {
-	
+	height: 100%;
+	width: 100%;
+	text-align: center;
 }
-p{
+p {
 	font-size: 16px;
+}
+.social {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	background-color: black;
 }
 
 /*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/
