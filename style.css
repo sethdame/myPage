@@ -4,7 +4,6 @@ body {
 	margin: 0;
 }
 * {
-	/*background-color: #333333;*/
 	font-family: impact;
 	color: white;
 }
@@ -25,9 +24,8 @@ canvas {
 	height: 100%;
 	width: 100%;
 }
-.social {
-	margin-top: 12px;
-	margin-bottom: 12px;
+i {
+	margin: 15px 20px 15px 20px;
 }
 #main {
 	margin-top: -20px;
@@ -37,6 +35,10 @@ canvas {
 	font-size: 20px;
 	text-decoration: none;
 	color: white;
+}
+#phoneBox {
+	margin-top: 15px;
+	margin-bottom: 20px;
 }
 #projects {
 	padding-top: 50px;
@@ -53,12 +55,17 @@ i:hover, #phone:hover {
   -webkit-transition:.4s;
   transition:.4s;
 }
+h2 {
+  font: 400 100px/1.3 'Berkshire Swash', Helvetica, sans-serif;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+}
 section.module:last-child {
   margin-bottom: 0;
 }
 section.module h2 {
   margin-bottom: 40px;
-  font-family: impact;
+  font: 400 100px/1.3 'Berkshire Swash', Helvetica, sans-serif;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
   font-size: 30px;
 }
 section.module p {
@@ -73,7 +80,6 @@ section.module p:last-child {
 }
 section.module.content {
   padding: 10px 0;
-  margin: 20px;
   background-color: #333333;
 }
 section.module.parallax {
@@ -96,12 +102,14 @@ section.module.parallax h1 {
 }
 section.module.parallax-1 {
   background-image: url("imgs/milkyisland.jpg");
+  background-position: 40% -200px!important;
 }
 section.module.parallax-2 {
   background-image: url("imgs/gasandfire.jpg");
 }
 section.module.parallax-3 {
   background-image: url("imgs/sandstone.jpg");
+  background-position: 40% 200px!important;
 }
 @media all {
   section.module.parallax h1 {
@@ -124,5 +132,8 @@ section.module.parallax-3 {
   section.module.parallax h1 {
     font-size: 100px;
   }
+}
+p{
+	font: 400 100px/1.0 'Just Another Hand', Helvetica, sans-serif;
 }
 /*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/

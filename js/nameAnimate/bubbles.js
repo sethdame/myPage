@@ -303,12 +303,31 @@ var pointCollection;
 document.rotationForce = 0.0;
 document.Friction = 0.85;
 
-var white = [0, 0, 100];
-var black = [0, 0, 27];
+
+ 
+setTimeout(updateCanvasDimensions, 50);
+
+var myName = "Seth Dame";
+
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
 var green = [75, 100, 40];
 var blue = [196, 77, 55];
 var purple = [280, 50, 60];
- 
-setTimeout(updateCanvasDimensions, 30);
+var white = [0, 0, 100];
+var black = [0, 0, 27];
+// var letterColors = [white, white, white, white, red, red, red, red];
+var letterColors = [white];
+
+drawName(myName, letterColors);
+
+if(10 < 3)
+{
+    bubbleShape = 'square';
+}
+else
+{
+    bubbleShape = 'circle';
+}
+
+bounceBubbles();
