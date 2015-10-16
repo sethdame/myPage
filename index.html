@@ -34,7 +34,9 @@
 		</div>
 		<div id="phoneBox"><a id="phone" href="tel:6176333218">617.633.3218</a></div>
 		<div>
-			<p>This page functions as my portfolio and resume. What you see is built with JavaScript, HTML/CSS with bootstrap and AngularJS. Along with this site being responsive and dynamic, it's fun! If you haven't moved your mouse over my name, you should. </p>
+			<p>This page functions as my portfolio and resume. What you see is built with JavaScript, HTML/CSS with bootstrap and AngularJS. Along with this site being responsive and dynamic, it's fun! If you haven't moved your mouse over my name, you should.</p>
+			<p>**THIS SITE WENT UP OCT 15, 2015, UNDER CONSTRUCTION BUT WILL BE FULLY FUNCTIONAL SHORTYLY WITH SOME** **SURPRISE FEATURES**</p>
+			<img src="imgs/underconstruction.jpg">
 		</div>
 	</div>
 </section>
@@ -50,26 +52,26 @@
 		<div id="sound">
 			<h2><a>Search SoundCloud</a></h2>
 			<p>Built with Angular and demonstrates intigration with a RESTful API</p>
-			<div ng-app='sounder' ng-controller='soundCtrl' class='ng-cloak'>
+			<!-- <div ng-app='sounder' ng-controller='soundCtrl' class='ng-cloak'>
+				<form>
+					<input type="text" placeholder="username" ng-model="searchText">
+					<button class="button" ng-click="getUser()">Find User</button>
+				</form>
 				<div class="row">
-		    		<div ng-repeat="song in userData">
+				    <div ng-repeat="song in userData">
 				      <div class="col-md-1">
 				        <img src="http://i.ytimg.com/vi/L5z2-Mx9TNE/hqdefault.jpg" ng-click="play(song.permalink_url)" ng-if="!song.artwork_url">
 				        <img ng-src="{{song.artwork_url}}" ng-click="play(song.permalink_url)" ng-if="song.artwork_url">
 				      </div>
 				    </div>
-				  </div>
-			<form ng-submit='getUser()'>
-				<input ng-model='searchText' placeholder='User'></input>
-				<button type='submit'>Enter</button>
-			</form>
-		</div>
+				 </div>	
+			</div> -->
 		</div>
 		<div id="chat">
 			<h2><a href="#/chatroom">The Chatroom</a></h2>
 			<p>Send me or anyone else visiting the page a message. Parse calling and returning. Angular</p>
 		</div>
-		<h4>Section not up and working yet</h4>
+		<h4>SECTION NOT WORKING YET :( BUT SOON!</h4>
 	</div>
 </section>
 
@@ -82,10 +84,7 @@
 <section class="module content">
   <div class="container">
     <h2>Professional History</h2>
-    <p></p>
-    <form action="">
-      <input type="submit" value="">
-    </form>
+    <p>***INTERACTIVE RESUME COMING SOON***</p>
   </div>
 </section>
 	
@@ -99,14 +98,10 @@
 
 <script type="text/javascript" src="js/bubbles.js"></script>
 <script type="text/javascript" src='js/app.js'></script>
-<script type="text/javascript" src='js/defaultHeader.js'></script>
 <!-- Controllers -->
-<script type="text/javascript" src='js/MainController.js'></script>
-<script type="text/javascript" src='js/home/homeCtrl.js'></script>
 <script type="text/javascript" src='js/resume/resumeCtrl.js'></script>
 <script type="text/javascript" src="js/soundcloud/soundCtrl.js"></script>
 <!-- Services -->
-<script type="text/javascript" src='js/home/homeService.js'></script>
 <script type="text/javascript" src='js/resume/resumeService.js'></script>
 
 </body>
