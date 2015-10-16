@@ -10,9 +10,9 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet" type="text/css">
+	<link href="imgs/favicon.ico" rel="icon" type="image/x-icon" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
 </head>
 <body ng-controller="MainController">
 <header>
@@ -36,7 +36,7 @@
 		<div>
 			<p>This page functions as my portfolio and resume. What you see is built with JavaScript, HTML/CSS with bootstrap and AngularJS. Along with this site being responsive and dynamic, it's fun! If you haven't moved your mouse over my name, you should.</p>
 			<p>**THIS SITE WENT UP OCT 15, 2015, UNDER CONSTRUCTION BUT WILL BE FULLY FUNCTIONAL SHORTYLY WITH SOME** **SURPRISE FEATURES**</p>
-			<img src="imgs/underconstruction.jpg">
+			<img id="construction" src="imgs/underconstruction.jpg">
 		</div>
 	</div>
 </section>
@@ -49,29 +49,16 @@
 
 <section class="module content" id="projects">
 	<div class="container" id="proj">
-		<div id="sound">
-			<h2><a>Search SoundCloud</a></h2>
+		<div>
+			<h2>Search SoundCloud</h2>
+			<a href="soundcloud/soundcloud.html"><img id ="soundimg" src="imgs/soundcloud.jpg"></a>
 			<p>Built with Angular and demonstrates intigration with a RESTful API</p>
-			<!-- <div ng-app='sounder' ng-controller='soundCtrl' class='ng-cloak'>
-				<form>
-					<input type="text" placeholder="username" ng-model="searchText">
-					<button class="button" ng-click="getUser()">Find User</button>
-				</form>
-				<div class="row">
-				    <div ng-repeat="song in userData">
-				      <div class="col-md-1">
-				        <img src="http://i.ytimg.com/vi/L5z2-Mx9TNE/hqdefault.jpg" ng-click="play(song.permalink_url)" ng-if="!song.artwork_url">
-				        <img ng-src="{{song.artwork_url}}" ng-click="play(song.permalink_url)" ng-if="song.artwork_url">
-				      </div>
-				    </div>
-				 </div>	
-			</div> -->
 		</div>
 		<div id="chat">
-			<h2><a href="#/chatroom">The Chatroom</a></h2>
+			<h2>The Chatroom</h2>
 			<p>Send me or anyone else visiting the page a message. Parse calling and returning. Angular</p>
 		</div>
-		<h4>SECTION NOT WORKING YET :( BUT SOON!</h4>
+		<h4>SECTION NOT WORKING YET :( BUT SOON! ALONG WITH BIGGER APPLICATIONS THAT WILL BE LINKED</h4>
 	</div>
 </section>
 
@@ -95,13 +82,14 @@
 <script src="http://connect.soundcloud.com/sdk.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.js"></script>
-
+<script type="text/javascript" src="js/alphabet.js"></script>
 <script type="text/javascript" src="js/bubbles.js"></script>
-<!-- <script type="text/javascript" src='js/app.js'></script> -->
+<script type="text/javascript" src='js/soundcloud/app.js'></script>
 <!-- Controllers -->
 <!-- <script type="text/javascript" src='js/resume/resumeCtrl.js'></script> -->
 <script type="text/javascript" src="js/soundcloud/soundCtrl.js"></script>
 <!-- Services -->
+<script type="text/javascript" src="js/soundcloud/soundService.js"></script>
 <!-- <script type="text/javascript" src='js/resume/resumeService.js'></script> -->
 
 </body>

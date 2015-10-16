@@ -1,0 +1,36 @@
+<html ng-app='sounder'>
+<head>
+<style>
+	[ng-cloak], .ng-cloak {
+		display: none !important;
+	}
+</style>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">	
+</head>
+<body ng-controller='soundCtrl' class='ng-cloak'>
+
+	<div class="row">
+    <div ng-repeat="song in userData">
+      <div class="col-md-1">
+        <img src="http://i.ytimg.com/vi/L5z2-Mx9TNE/hqdefault.jpg" ng-click="play(song.permalink_url)" ng-if="!song.artwork_url">
+        <img ng-src="{{song.artwork_url}}" ng-click="play(song.permalink_url)" ng-if="song.artwork_url">
+      </div>
+    </div>
+  </div>
+
+	<form ng-submit='getUser()'>
+		<input ng-model='searchText' placeholder='User'></input>
+		<button type='submit'>Enter</button>
+	</form>
+
+
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src='js/soundCtrl.js'></script>
+
+
+</body>
+</html>
