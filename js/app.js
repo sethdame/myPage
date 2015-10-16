@@ -5,13 +5,13 @@ app.config(function($routeProvider, $httpProvider){
 
   //router here
    $routeProvider
-	  .when('/home', {
-	    templateUrl: '/homeTmpl.html',
-	    controller: 'homeCtrl.js'
+	  .when('/soundcloud', {
+	    templateUrl: 'js/soundcloud/soundTmpl.html',
+	    controller: 'soundCtrl'
 	  })
-	  .when('/projects', {
-	    templateUrl: '/projectsTmpl.html',
-	    controller: 'projectsCtrl.js'
+	  .when('/chatroom', {
+	    templateUrl: 'js/chatroom/chatTmpl.html',
+	    controller: 'chatCtrl'
 	  })
 	  .when('/resume', {
 	  	templateUrl: 'resumeTmpl.html',

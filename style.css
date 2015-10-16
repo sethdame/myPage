@@ -105,7 +105,7 @@ section.module.parallax-2 {
 }
 section.module.parallax-3 {
   background-image: url("imgs/sandstone.jpg");
-  background-position: 40% 200px!important;
+  background-position: 40% 100px!important;
 }
 @media all {
   section.module.parallax h1 {
