@@ -54,6 +54,7 @@ i {
   height: 100%;
   width: 100%;
   border-radius: 100%;
+  margin-top: -30px;
 }
 #projects {
 	padding-top: 50px;
@@ -125,7 +126,7 @@ section.module.parallax-2 {
 }
 section.module.parallax-3 {
   background-image: url("imgs/sandstone.jpg");
-  background-position: 40% 100px!important;
+  /*background-position: 40% 30px!important;*/
 }
 @media all {
   section.module.parallax h1 {

@@ -1,0 +1,11 @@
+
+body {
+  height: 95%;
+  width: 100%;
+  font-family: sans-serif;
+  background-image: url('soundcloudpage.jpg');
+}
+#searchBox {
+	text-align: center;
+	margin: auto;
+}
