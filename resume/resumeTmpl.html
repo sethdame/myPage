@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="resumeApp">
+<head>
+    <meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body ng-controller="resumeCtrl">
+
+    <!-- HEADER AND NAVBAR -->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header" >
+                <ul>
+                    <li><a href="/">Back To My Site!</a></li>
+                    <li>Website
+                        <ul>
+                            <li>sethdame.com</li>
+                        </ul>
+                    </li>
+                    <li>Phone
+                        <ul>
+                            <li>617.633.3218</li>
+                        </ul>
+                    </li>
+                    <li>Email
+                        <ul>
+                            <li>seth.e.dame@gmail.com</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/"><i class="glyphicon glyphicon-ok"></i> Qualifications</a></li>
+                <li><a href="#experience"><i class="fa fa-shield"></i> Experience</a></li>
+                <li><a href="#education"><i class="fa fa-book"></i> Education</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+        
+        <div ng-view>{{ message }}</div>
+    </div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+<script src="js/resumeApp.js"></script>
+<script src="js/resumeCtrl.js"></script>
+
+</body>
+</html>

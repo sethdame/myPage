@@ -7,7 +7,7 @@ var resumeApp = angular.module('resumeApp', ['ngRoute']);
             // route for the home page
             .when('/', {
                 templateUrl : 'pages/home.html',
-                controller  : 'mainCtrl'
+                controller  : 'resumeCtrl'
             })
 
             // route for the about page
