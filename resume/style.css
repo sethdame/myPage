@@ -1,8 +1,59 @@
-
 #back:link {
 	text-decoration: none;
 	color: black;
 }
+.skillpics img {
+	max-height: 150px;
+	max-width: 140px;
+	height: 100%;
+	width: 100%;
+}
+.xppic {
+	max-height: 240px;
+	max-width: 230px;
+	height: 100%;
+	width: 100%;
+}
+.xpbox {
+	display: inline-block;
+	max-width: 1360px;
+}
+.info {
+	display: inline-block;
+}
+.xp-lo-da {
+	display: inline-block;
+	font-size: 30px;
+	text-align: right;
+	float: right;
+}
+.edupics {
+	max-height: 250px;
+	max-width: 400px;
+	height: 100%;
+	width: 100%;
+}
+.eduinfo, .xpinfo {
+	text-align: left;
+	display: inline-block;
+	padding: 20px 20px 50px 20px;
+}
+.infobox {
+	padding: 20px 20px 50px 20px;
+}
+.resumeLists {
+	text-align: left;
+	display: inline-block;
+}
+div.resumeLists h2 {
+	font-size: 70px;
+}
+div.resumeLists h3 {
+	font-size: 50px;
+}
+ul.listinfo {
+	font-size: 30px;
+} 
 div.navbar-header ul {
   text-align: left;
   display: inline;
