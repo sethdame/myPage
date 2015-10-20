@@ -143,3 +143,11 @@ span#back:hover {
 #navbar {
   background-color: rgb(240, 80, 51) !important;
 }
+#btmskills {
+  position: relative;
+  left: 150px;
+}
+ul.quals li {
+  font-weight: bold;
+  font-size: 30px;
+}
