@@ -5,12 +5,27 @@
 		display: none !important;
 	}
 </style>
+<title>SoundCloud</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="imgs/SC.ico" rel="icon" type="image/x-icon">	
 </head>
+<header>
+	<h1><i class="fa fa-soundcloud"></i> SoundCloud API App With AngularJS <i class="fa fa-soundcloud"></i></h1>
+	<h4>(Integration with SoundCloud's RESTful API)</h4>
+</header>
 <body ng-controller='soundCtrl' class='ng-cloak'>
+	<div class="description">
+		<p>This app allows you to search SoundClouds databases via username, and listen to the tracks that the user has uploaded.</p>
+		<p>Try searching for: Kaskade, Snails or Yahtzel</p>
+	</div>
+<form>
+	<input type="text" class="inputbox" placeholder="username" ng-model="searchText">
+	<a href="#" class="myButton" ng-click="getUser()">Find User</a>
+</form>
 
-	<div class="row">
+<div class="row">
     <div ng-repeat="song in userData">
       <div class="col-md-1">
         <img src="http://i.ytimg.com/vi/L5z2-Mx9TNE/hqdefault.jpg" ng-click="play(song.permalink_url)" ng-if="!song.artwork_url">
@@ -19,11 +34,7 @@
     </div>
   </div>
 
-	<form ng-submit='getUser()' class="searchBox">
-		<input ng-model='searchText' placeholder='User'></input>
-		<button type='submit'>Enter</button>
-	</form>
-
+  <div ng-bind-html="player_html">Play dat Jam!</div>
 
 <script src="http://connect.soundcloud.com/sdk.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
