@@ -11,33 +11,40 @@
 
     <!-- HEADER AND NAVBAR -->
 <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="navbar">
         <div class="container">
             <div class="navbar-header" >
                 <ul>
-                    <li><a href="/">Back To My Site!</a></li>
-                    <li>Website
+                    <li><a href="/"><span id="back"><i class="fa fa-arrow-left"></i> Back To My Site!</span></a></li>
+                    <li><i class="fa fa-rocket"></i> Website
                         <ul>
                             <li>sethdame.com</li>
                         </ul>
                     </li>
-                    <li>Phone
+                    <li><i class="fa fa-mobile"></i> Phone
                         <ul>
                             <li>617.633.3218</li>
                         </ul>
                     </li>
-                    <li>Email
+                    <li><i class="fa fa-envelope"></i> Email
                         <ul>
                             <li>seth.e.dame@gmail.com</li>
                         </ul>
                     </li>
+                    <li><i class="fa fa-map-marker"></i> Location
+                        <ul>
+                            <li>Sandy,UT 84092</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#/"><i class="glyphicon glyphicon-ok"></i> Qualifications</a></li>
-                <li><a href="#experience"><i class="fa fa-shield"></i> Experience</a></li>
-                <li><a href="#education"><i class="fa fa-book"></i> Education</a></li>
-            </ul>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="pgtitle"><a href="#/"><i class="icon glyphicon glyphicon-ok"></i> <span>Qualifications</span></a></li>
+                    <li class="pgtitle"><a href="#experience"><i class="icon fa fa-shield"></i> <span>Experience</span></a></li>
+                    <li class="pgtitle"><a href="#education"><i class="icon fa fa-book"></i> <span>Education</span></a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
@@ -45,7 +52,7 @@
     <!-- MAIN CONTENT AND INJECTED VIEWS -->
     <div id="main">
         
-        <div ng-view>{{ message }}</div>
+        <div ng-view style="background-color: #333333;">{{ message }}</div>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

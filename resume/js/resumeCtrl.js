@@ -1,7 +1,7 @@
 var resumeApp = angular.module('resumeApp');
 
 resumeApp.controller('resumeCtrl', function($scope) {
-    $scope.message = 'Still filling in all the info but the binding works!';
+    $scope.message = 'Still making it look pretty but the binding works!';
 });
 
 resumeApp.controller('experienceCtrl', function($scope) {
