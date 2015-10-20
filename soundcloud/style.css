@@ -5,6 +5,18 @@ body {
   font-family: sans-serif;
   background-image: url('soundcloudpage.jpg');
 }
+span#back {
+  text-decoration: none;
+  color: #f78a0e;
+  font-weight: bold;
+  float: left;
+  padding: 20px;
+}
+span#back:hover {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
 form {
 	text-align: center;
 	margin: 20px;
