@@ -1,6 +1,7 @@
 .skillpix img {
 	max-height: 150px;
 	max-width: 140px;
+  padding: 10px;
 }
 .xppix {
 	max-height: 240px;
@@ -19,15 +20,18 @@
   display: inline-block;
 }
 .shadbox {
-  max-width: 1600px;
-  max-height: 500px;
-  margin: 10px 20px 20px 20px;
+  max-width: auto;
+  max-height: auto;
   border: 4px solid black;
   padding: 10px;
   box-shadow: 10px 10px 5px white;
   background-color: white;
+  margin-bottom: 20px;
+  position: relative;
+  left: 20px
+  margin: auto;
 }
-.pix, .shadbox, .skillpics img {
+.pix, .shadbox, .resumelists, .skillpics img {
 	height: 100%;
 	width: 100%;
 }
@@ -124,6 +128,9 @@ span#back:hover {
   color: #333333;
   background-color: white;
   font-weight: bold;
+}
+#main {
+  background-color: #333333;
 }
 .bigwords {
   margin-top: -20px;

@@ -1,11 +1,11 @@
 var resumeApp = angular.module('resumeApp');
 
 resumeApp.controller('resumeCtrl', function($scope) {
-    $scope.message = 'Still making it look pretty but the binding works!';
+    $scope.message = 'What is most important at the moment';
 });
 
 resumeApp.controller('experienceCtrl', function($scope) {
-    $scope.message = 'More design and color shortly';
+    $scope.message = 'Wanting this to be filled tech XP!';
 });
 
 resumeApp.controller('educationCtrl', function($scope) {
