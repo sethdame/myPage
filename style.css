@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 * {
-	font-family: impact;
+	font-family: Helvetica, Garamond, Geneva;
 	color: white;
 }
 .container {
@@ -24,8 +24,9 @@ canvas {
 	height: 100%;
 	width: 100%;
 }
-i {
-	margin: 15px 20px 15px 20px;
+div.social i {
+	padding: 15px 20px 15px 20px;
+  font-size: 60px;
 }
 #main {
 	margin-top: -20px;
@@ -34,11 +35,12 @@ i {
 #phone {
 	font-size: 20px;
 	text-decoration: none;
-	color: white;
+	color: #333333;
 }
 #phoneBox {
 	margin-top: 15px;
 	margin-bottom: 20px;
+  display: inline-block;
 }
 #construction {
   text-align: center;
@@ -47,15 +49,6 @@ i {
   height: 100%;
   width: 100%;
 }
-#projimg {
-  text-align: center;
-  max-height: 100px;
-  max-width: 100px;
-  height: 100%;
-  width: 100%;
-  border-radius: 100%;
-  margin-top: -30px;
-}
 #projects {
 	padding-top: 50px;
 	margin: auto;
@@ -63,7 +56,7 @@ i {
 p {
 	font-size: 16px;
 }
-i:hover, #phone:hover {
+div.social i:hover, div#proj i:hover, #phone:hover {
   color: red;
   -o-transition:.4s;
   -ms-transition:.4s;
@@ -78,13 +71,8 @@ h2 {
 section.module:last-child {
   margin-bottom: 0;
 }
-/*#sound {
-  width: 100% !important;
-  height: 100% !important;
-  position: left!important;
-}*/
 section.module h2 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font: 400 100px/1.3 'Berkshire Swash', Helvetica, sans-serif;
   text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
   font-size: 30px;
@@ -150,5 +138,116 @@ section.module.parallax-3 {
     font-size: 100px;
   }
 }
+button { 
+  border: none; 
+  display: block; 
+}
+a { 
+  text-decoration: none; 
+  display: block; 
+}
+div.social a {
+  display: inline-block !important;
+}
+div#proj i {
+  font-size: 200px;
+}
+div.projicon, div.projicon a {
+  margin: auto;
+  display: inline-block;
+}
+div.projicon {
+  max-height: 130px;
+  position: relative;
+  bottom: 50px;
+}
+.projbox {
+  width: auto;
+  height: auto;
+  max-width: 840px;
+  max-height: 350px;
+  border: 2px solid #5E5B59;
+  padding: 20px;
+  margin: auto;
+  border-radius: 25px;
+  text-align: center;
+  -moz-box-shadow: inset -1px 0px 50px 3px #b2b2b2;
+  -webkit-box-shadow: inset -1px 0px 50px 3px #b2b2b2;
+  box-shadow: inset -1px 0px 50px 3px #b2b2b2;
+  background-color: transparent;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+
+
+/* Metal ------------------------- */
+
+.metal {
+  position: relative;
+  margin: 40px auto;
+  outline: none;
+  
+  font: bold 6em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  color: hsla(0,0%,20%,1);
+  text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  
+  background-color: hsl(0,0%,90%);
+  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+  
+  transition: color .2s;
+}
+.radial.metal {
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  border-radius: 80px;
+  background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+    
+    -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+}
+.metal.radial:before, .metal.radial:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  /* fake conical gradients */
+  background-image: -webkit-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+}
+.metal.radial:before { transform: rotate( 65deg); }
+.metal.radial:after { transform: rotate(-65deg); }
+.metal:active {
+  color: hsl(210, 100%, 40%);
+  text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+  box-shadow: 
+    inset hsla(210,100%,30%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(210,100%,20%,.25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(210,100%,100%,.7) 0  2px 1px 7px, /* top HL */
+    hsla(210,100%,75%, .8) 0  0px 3px 2px, /* outer SD */
+    hsla(210,50%,40%, .25) 0 -5px 6px 4px, /* outer SD */
+    hsla(210,80%,95%,   1) 0  5px 6px 4px; /* outer HL */
+}
+
 
 /*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/
