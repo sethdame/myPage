@@ -187,6 +187,10 @@ div.redditicon {
   position: relative;
   bottom: 30px;
 }
+div.databaseicon {
+  position: relative;
+  bottom: 0px;
+}
 div.projleft {
   float: left;
 }
