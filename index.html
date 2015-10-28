@@ -9,9 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet" type="text/css">
 	<link href="imgs/favicon.ico" rel="icon" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 </head>
 <body>
@@ -22,9 +22,8 @@
 		</div>
 	</section>
 </header>
-
-<section class="module content" id="meContent">
-	<div class="container" id="main">
+<section class="module content" id="mainContent">
+	<div class="container main" id="main">
 		<h2 id="welcome">Welcome to My Site!</h2>
 		<div class="social">
 			<a class="twitter" href="http://twitter.com/Sdame55"><i class="fa fa-twitter-square fa-3x"></i></a>
@@ -32,10 +31,10 @@
 			<a class="github" href="https://github.com/sethdame"><i class="fa fa-github fa-3x"></i></a>
 			<a class="email" href="mailto:seth.e.dame@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a>
 		</div>
-		<div id="phoneBox"><a id="phone" href="tel:6176333218">617.633.3218</a></div>
+		<div class="phoneBox"><a class="phone" href="tel:6176333218">617.633.3218</a></div>
 		<div>
 			<p>This page functions as my portfolio and resume. What you see is built with JavaScript, HTML/CSS with bootstrap and AngularJS. Along with this site being responsive and dynamic, it's fun! If you haven't moved your mouse over my name, you should.</p>
-			<p>**THIS SITE WENT UP OCT 15, 2015, STILL ADDING CONTENT</p>
+			<p>**THIS SITE WENT UP OCT 15, 2015, STILL ADDING CONTENT**</p>
 		</div>
 	</div>
 </section>
@@ -48,38 +47,42 @@
 
 <section class="module content" id="projects">
 	<div class="container" id="proj">
-		<h1>**Section MOSTLY working! More Apps and Projects on the way!**</h1>
-		<div class="projleft">
-			<div class="projbox sc">
-				<h2>Search SoundCloud</h2>
-				<div class="projicon">
+		<h2>A few of the projects I've completed. All of them are done in Angular. More on the Way!</h2>
+		<div class="slider">
+			<ul id="projSlider">
+				<li id="slide-1">
 					<a href="soundCloud/soundCloud.html"><i class="fa fa-soundcloud"></i></a>
-					<p>Built with Angular and demonstrates integration with a RESTful API</p>
-				</div>
-			</div>
-			<div class="projbox chat">
-				<h2>The Chatroom</h2>
-				<div class="projicon chaticon">
-					<a href="chatroom/chatTmpl.html"><i class="fa fa-comments"></i></a>
-					<p>Simple little chatroom app. Parse calling and returning. Angular</p>
-				</div>
-			</div>
-		</div>
-		<div class="projright">
-			<div class="projbox reddit">
-				<h2>Reddit</h2>
-				<div class="projicon redditicon">
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>Search SoundCloud</strong>
+						<p class="slider-text">Built with Angular and demonstrates integration with a RESTful API</p>
+					</div>
+				</li>
+				<li id="slide-2">
 					<a href="reddit/index.html"><i class="fa fa-reddit"></i></a>
-					<p>A Clone of the popular site Reddit. Post something and upvote it! Angular and bootstrap. Demonstrates RESTful work.</p>
-				</div>
-			</div>
-			<div class="projbox">
-				<h2>Soon...</h2>
-				<div class="projicon databaseicon">
-					<a href=""><i class="fa fa-database"></i></a>
-					<p>More coming soon!</p>
-				</div>
-			</div>
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>Reddit</strong>
+						<p class="slider-text">A Clone of the popular site Reddit. Post something and upvote it! Angular and bootstrap. Demonstrates RESTful work.</p>
+					</div>
+				</li>
+				<li id="slide-3">
+					<a href="chatroom/chatTmpl.html"><i class="fa fa-comments"></i></a>
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>The Chatroom</strong>
+						<p class="slider-text">Simple little chatroom app. Parse calling and returning. Angular</p>
+					</div>
+				</li>
+				<li id="slide-4">
+					<a href="#" onclick="return false;"><i class="fa fa-database"></i></a>
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>Soon...</strong>
+						<p class="slider-text">More coming soon!</p>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 </section>
@@ -90,25 +93,25 @@
 	</div>
 </section>
 
-<section class="module content">
+<section class="module content" id="resume">
   <div class="container">
+  	<h2>Click to see my SPA (Single Page Application) Resume made using AngularJS Routing</h2>
     <form style="display: inline;" action="resume/index.html" method="get">
     	<button class="metal radial"><i class="fa fa-file-text-o"></i></button>
     </form>
-    <!-- <a href="resume/index.html"><img id="projimg"src="imgs/resume.jpg"></a> -->
-    <p>Click to see my SPA (Single Page Application) Resume made using AngularJS Routing</p>
   </div>
 </section>
 	
-
-	<!-- <div ng-repeat='item in items'>{{item}}</div> -->
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script type="text/javascript" src="js/alphabet.js"></script>
 <script type="text/javascript" src="js/bubbles.js"></script>
+<script type="text/javascript" src="js/jquery.zaccordion.min.js"></script>
+<script type="text/javascript" src="js/projApp.js"></script>
 
 </body>
 </html>
