@@ -197,6 +197,13 @@ section.module.parallax-3 {
     font-size: 100px;
   }
 }
+input.tictac {
+  background-color: #1a1a1a;
+  color: white;
+}
+.tictacBox {
+  position: relative;
+}
 /* METAL-BUTTON------------------------ */
 
 .metal {
