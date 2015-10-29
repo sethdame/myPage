@@ -1,0 +1,292 @@
+body, .container, .header, .projbox {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.container, .header, .container {
+  text-align: center;
+}
+.header {
+  margin: auto;
+  max-height: 500px;
+}
+canvas {
+  width: auto;
+  height: auto;
+}
+div.social i {
+  font-size: 60px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+}
+div.slide i {
+  font-size: 250px;
+  color: white;
+}
+.phone {
+  font-size: 25px;
+  text-decoration: none;
+  color: #333333;
+}
+.phoneBox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+i:hover, .phone:hover {
+  color: red !important;
+  -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+  text-decoration: none;
+}
+section.module:last-child {
+  margin-bottom: 0;
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+}
+section#mainContent h2{
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+section#projects h2, section#resume h2 {
+  font-size: 25px;
+}
+section#mainContent p {
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+section#projects p {
+  font-size: 32px;
+}
+p {
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 300;
+}
+section.module.content {
+  min-height: 400px;  
+  padding: 10px 0;
+  background-color: #333333;
+}
+/*ACCORDION////////////////////*/
+div.slider {
+  margin: 0 auto;
+  position: relative;
+  left: 120px;
+  padding: 30px 0px 30px 0px;
+  height: 100%;
+  width: 100%;
+}
+#projSlider li {
+  position:relative;
+  text-align: center;
+}
+#slide-1 {
+  background-color: #474747;
+}
+#slide-2 {
+  background-color: #5c5c5c; 
+}
+#slide-3 {
+  background-color: #757575;
+}
+#slide-4 {
+  background-color: #949494;
+}
+#projSlider div.slider-bg {
+  background: #000;
+  top: 300px;
+  height: 102px;
+  width: 600px;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  opacity:.5;
+}
+#projSlider div.slider-info {
+  top: 300px;
+  height: 72px;
+  left: 0;
+  position: absolute;
+  width: 65px;
+  z-index: 15;
+  padding: 15px;
+}
+#projSlider div.slider-info strong {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+#projSlider div.slider-info p {
+  display: none;
+  font-size: 16px;
+  line-height: 14px;
+  color: #fff;
+  margin: 0 !important;
+}
+#projSlider li.slider-open div.slider-info {
+  width: 570px;
+}
+#projSlider li.slider-open div.slider-info strong {
+  font-size: 22px;
+}
+#projSlider li.slider-open div.slider-info p {
+  display: block;
+}
+#projSlider i {
+  font-size: 300px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*PARALLAX////////////////////*/
+section.module.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 35px;
+  line-height: 400px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: impact;
+  margin: 0;
+}
+section.module.parallax-1 {
+  background-image: url("imgs/milkyisland.jpg");
+  background-position: 40% -200px!important;
+}
+section.module.parallax-2 {
+  background-image: url("imgs/gasandfire.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("imgs/sandstone.jpg");
+  /*background-position: 40% 30px!important;*/
+}
+/*////////////////////////////////*/
+@media all {
+  section.module.parallax h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 26px;
+  }
+  section.module.parallax h1 {
+    font-size: 70px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 100px;
+  }
+}
+.animatetxta, .animatetxtb {
+  -webkit-backface-visibility: hidden;
+}
+footer {
+  background-color: #1f1f1f;
+  color: #404040;
+  height: 100%;
+  font-size: 16px;
+}
+/* METAL-BUTTON------------------------ */
+
+.metal {
+  position: relative;
+  margin: 40px auto;
+  outline: none;
+  
+  font: bold 6em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  color: hsla(0,0%,20%,1);
+  text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  
+  background-color: hsl(0,0%,90%);
+  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+  
+  transition: color .2s;
+}
+.radial.metal {
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  border-radius: 80px;
+  background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+    
+    -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+    background-image: -moz-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -moz-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -moz-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -moz-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    
+    -moz-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+    -moz-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+    -moz-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+    
+    -moz-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+}
+.metal.radial:before, .metal.radial:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  /* fake conical gradients */
+  background-image: -webkit-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+    background-image: -moz-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -moz-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -moz-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+    -moz-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+}
+.metal.radial:before { transform: rotate( 65deg); }
+.metal.radial:after { transform: rotate(-65deg); }
+.metal:active {
+  color: hsl(210, 100%, 40%);
+  text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+  box-shadow: 
+    inset hsla(210,100%,30%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(210,100%,20%,.25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(210,100%,100%,.7) 0  2px 1px 7px, /* top HL */
+    hsla(210,100%,75%, .8) 0  0px 3px 2px, /* outer SD */
+    hsla(210,50%,40%, .25) 0 -5px 6px 4px, /* outer SD */
+    hsla(210,80%,95%,   1) 0  5px 6px 4px; /* outer HL */
+}
+
+
+/*@media screen and (max-width: 600px), (max-width: 1500px), (min-width: 1000px), (min-height: 500px) {*/
