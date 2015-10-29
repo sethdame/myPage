@@ -19,3 +19,9 @@ $(document).ready(function() {
 		easing: 'easeOutBounce'
 	});
 });
+
+$(function() {
+	$('.animatetxtp').textillate({
+		speed: 1500
+	});
+});
