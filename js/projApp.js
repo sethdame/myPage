@@ -21,7 +21,18 @@ $(document).ready(function() {
 });
 
 $(function() {
-	$('.animatetxtp').textillate({
-		speed: 1500
+	$('.animatetxta').textillate({
+		in: {
+			shuffle: true,
+			effect:'bounceInLeft',
+			delay: 10
+		}
+	});
+	$('.animatetxtb').textillate({
+		initialDelay: 2000,
+		in: {
+			delay: 15,
+			effect: 'fadeInUpBig'
+		}
 	});
 });
