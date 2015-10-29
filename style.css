@@ -197,6 +197,9 @@ section.module.parallax-3 {
     font-size: 100px;
   }
 }
+.animatetxta, .animatetxtb {
+  -webkit-backface-visibility: hidden;
+}
 footer {
   background-color: #1f1f1f;
   color: #404040;

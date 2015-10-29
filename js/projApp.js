@@ -24,7 +24,7 @@ $(function() {
 	$('.animatetxta').textillate({
 		in: {
 			shuffle: true,
-			effect:'bounceInLeft',
+			effect:'bounceInDown',
 			delay: 10
 		}
 	});
