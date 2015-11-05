@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="resumeApp">
+<head>
+    <meta charset="utf-8">
+<title>Resume</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="/resume.ico" rel="icon" type="image/x-icon" />
+</head>
+<body ng-controller="resumeCtrl">
+
+    <!-- HEADER AND NAVBAR -->
+<header>
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container">
+            <div class="navbar-header" >
+                <ul>
+                    <li><a href="/"><span id="back"><i class="fa fa-arrow-left"></i> Back To My Site!</span></a></li>
+                    <li><i class="fa fa-rocket"></i> Website
+                        <ul>
+                            <li>sethdame.com</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-mobile"></i> Phone
+                        <ul>
+                            <li>617.633.3218</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-envelope"></i> Email
+                        <ul>
+                            <li>seth.e.dame@gmail.com</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-map-marker"></i> Location
+                        <ul>
+                            <li>Sandy,UT 84092</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="pgtitle"><a href="#/"><i class="icon glyphicon glyphicon-ok"></i> <span>Qualifications</span></a></li>
+                    <li class="pgtitle"><a href="#experience"><i class="icon fa fa-shield"></i> <span>Experience</span></a></li>
+                    <li class="pgtitle"><a href="#education"><i class="icon fa fa-book"></i> <span>Education</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+        
+        <div ng-view>{{ message }}</div>
+    </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+<script src="js/resumeApp.js"></script>
+<script src="js/resumeCtrl.js"></script>
+
+</body>
+</html>

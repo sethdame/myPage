@@ -1,0 +1,98 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  font-family: sans-serif;
+  background-image: url('soundcloudpage.jpg');
+}
+span#back {
+  text-decoration: none;
+  color: #f78a0e;
+  font-weight: bold;
+  float: left;
+  padding: 20px;
+}
+span#back:hover {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+form {
+	text-align: center;
+	margin: 20px;
+}
+h1, h4 {
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+}
+p {
+	text-align: center;
+	margin: auto;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.description {
+	width: auto;
+	height: auto;
+	max-width: 1000px;
+	max-height: 100px;
+	border: 2px solid #5E5B59;
+	padding: 20px;
+	margin: auto;
+	border-radius: 25px;
+	text-align: center;
+	-moz-box-shadow: inset -1px 0px 50px 3px #b2b2b2;
+	-webkit-box-shadow: inset -1px 0px 50px 3px #b2b2b2;
+	box-shadow: inset -1px 0px 50px 3px #b2b2b2;
+	background-color: transparent;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+.myButton {
+	-moz-box-shadow: inset -1px 0px 50px 3px #f78a0e;
+	-webkit-box-shadow: inset -1px 0px 50px 3px #f78a0e;
+	box-shadow: inset -1px 0px 50px 3px #f78a0e;
+	background-color: transparent;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 6px solid #5E5B59;
+	display: inline-block;
+	cursor: pointer;
+	color: #5E5B59;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 9px 13px;
+	text-decoration: none;
+	text-shadow: 1px 1px 11px #040a04;
+}
+.myButton:hover {
+	background-color: transparent;
+	text-decoration: none;
+	color: white;
+}
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+.inputbox {
+    font-size: 16px;
+    border-style: solid; 
+    padding: 13px; 
+    border-width: 6px; 
+    border-radius: 25px; 
+    background-color: transparent; 
+    border-color: #5E5B59; 
+    font-weight: bold; 
+    font-family: Verdana; 
+    box-shadow: 0px 6px 17px 0px rgba(42,42,42,.72); 
+    text-shadow: 0px 5px 12px rgba(42,42,42,.75);
+    -moz-box-shadow: inset -1px 0px 50px 3px #f78a0e;
+	-webkit-box-shadow: inset -1px 0px 50px 3px #f78a0e;  
+}
+.inputbox:focus { 
+	outline: none; 
+}
+

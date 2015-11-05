@@ -1,0 +1,153 @@
+.skillpix img {
+	max-height: 150px;
+	max-width: 140px;
+  padding: 10px;
+}
+.xppix {
+	max-height: 240px;
+	max-width: 230px;
+}
+.edupix {
+  max-height: 210px;
+  max-width: 350px;
+}
+.lo-da {
+  font-size: 30px;
+  text-align: right;
+  float: right;
+}
+.inb, .shadbox {
+  display: inline-block;
+}
+.shadbox {
+  max-width: auto;
+  max-height: auto;
+  border: 4px solid black;
+  padding: 10px;
+  box-shadow: 10px 10px 5px white;
+  background-color: white;
+  margin-bottom: 20px;
+  position: relative;
+  left: 20px
+  margin: auto;
+}
+.pix, .shadbox, .resumelists, .skillpics img {
+	height: 100%;
+	width: 100%;
+}
+.devmtnpic {
+  max-width: 600px;
+}
+div.resumelists h3 {
+	font-size: 50px;
+}
+ul.listinfo, div.einfobox p {
+	font-size: 25px;
+}
+.resumelists, .pgtitle {
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+div.navbar-header ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+div.navbar-header ul li {
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background-color: rgb(240, 80, 51);
+  color: white;
+  text-shadow: 0 -1px 0 black;                     /*whole left bar*/
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+div.navbar-header ul li:hover {
+  background-color: white;        /*hover over left main buttons*/
+  color: #333333;
+}
+div.navbar-header ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  max-width: 200px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -transition: opacity 0.4s;
+}
+div.navbar-header ul li ul li { 
+  background-color: rgb(240, 80, 51); 
+  display: block; 
+  color: white;
+  text-shadow: 0 -1px 0 black;
+}
+div.navbar-header ul li ul li:hover { 
+	background-color: white;
+  color: #333333;
+}
+div.navbar-header ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.icon, span {
+  color: white;
+}
+span:hover {
+  text-shadow: -1px -1px white;
+}
+.container {
+  background-color: rgb(240, 80, 51);
+}
+span#back {
+  text-decoration: none;
+  color: white;
+}
+span#back:hover {
+  text-decoration: none;
+  color: #333333;
+  background-color: white;
+  font-weight: bold;
+}
+#main {
+  background-color: #333333;
+}
+.bigwords {
+  margin-top: -20px;
+  background-color: #333333 !important;
+  color: white !important;
+  text-shadow: 3px 3px black !important;
+  font-weight: bold !important;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif !important;
+}
+#navbar {
+  background-color: rgb(240, 80, 51) !important;
+}
+#btmskills {
+  position: relative;
+  left: 150px;
+}
+ul.quals li {
+  font-weight: bold;
+  font-size: 30px;
+}

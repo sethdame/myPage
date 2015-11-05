@@ -1,6 +1,7 @@
+<!DOCtype html>
 <html>
 <head>
-	<title>Seth Dame: Utah-based Deveolper</title>
+	<title>Seth Dame: Utah-Based Developer</title>
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,58 +9,103 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+	<link href="imgs/favicon.ico" rel="icon" type="image/x-icon">
 </head>
-<body ng-app='SethsApp'>
+<body>
 <header>
-	<section>
-		<div id="header">
+	<section class="module parallax parallax-1">
+		<div class="container" id="header">
 			<canvas id="myCanvas"></canvas>
-			<h1 id="welcome">Welcome to My Page!</h1>
 		</div>
 	</section>
 </header>
-	<section ng-controller='MainController' class="main">
-		<div id="proj">
-			<h2>Search SoundCloud</h2>
-			<p>Connect to SoundCloud and search for a User (runawayak is me :))</p>
+<section class="module content" id="mainContent">
+	<div class="container main" id="main">
+		<h2 id="welcome">Welcome to My Site!</h2>
+		<div class="social">
+			<a class="twitter" href="http://twitter.com/Sdame55"><i class="fa fa-twitter-square fa-3x"></i></a>
+			<a class="linkedin" href="https://www.linkedin.com/pub/seth-dame/b0/296/a2"><i class="fa fa-linkedin-square fa-3x"></i></a>
+			<a class="github" href="https://github.com/sethdame"><i class="fa fa-github fa-3x"></i></a>
+			<a class="email" href="mailto:seth.e.dame@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a>
 		</div>
-		<div id="proj" class="chat">
-			<h2>The Chatroom</h2>
-			<p>Leave me or anyone else a message</p>
+		<div class="phoneBox"><a class="phone" href="tel:6176333218">617.633.3218</a></div>
+		<div>
+			<p class="animatetxta">This page functions as my portfolio and resume. What you see is built with JavaScript, HTML/CSS with bootstrap and AngularJS. Along with this site being responsive and dynamic, it's fun! If you haven't moved your mouse over my name, you should.</p>
+			<p class="animatetxtb">**THIS SITE WENT UP OCT 15, 2015, STILL ADDING CONTENT**</p>
 		</div>
-	</section>
-	<section>
-		<div id="proj" class="resume">
-			<h3>Resume</h3>
+	</div>
+</section>
+
+<section class="module parallax parallax-2">
+	<div class="container">
+		<h1>Projects</h1>
+	</div>
+</section>
+
+<section class="module content" id="projects">
+	<div class="container" id="proj">
+		<h2 class="animatetxtc">A few of the projects I've completed. All of them are done in Angular. More on the Way!</h2>
+		<div class="slider">
+			<ul id="projSlider">
+				<li id="slide-1">
+					<a href="soundCloud/soundCloud.html"><i class="fa fa-soundcloud"></i></a>
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>Search SoundCloud</strong>
+						<p class="slider-text">Built with Angular and demonstrates integration with a RESTful API</p>
+					</div>
+				</li>
+				<li id="slide-2">
+					<a href="reddit/index.html"><i class="fa fa-reddit"></i></a>
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>Reddit</strong>
+						<p class="slider-text">A Clone of the popular site Reddit. Post something and upvote it! Angular and bootstrap. Demonstrates RESTful work.</p>
+					</div>
+				</li>
+				<li id="slide-3">
+					<a href="chatroom/chatTmpl.html"><i class="fa fa-comments"></i></a>
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>The Chatroom</strong>
+						<p class="slider-text">Simple little chatroom app. Parse calling and returning. Angular</p>
+					</div>
+				</li>
+				<li id="slide-4">
+					<a href="rpsGame/index.html"><i class="fa fa-wrench"></i></a>
+					<div class="slider-bg"></div>
+					<div class="slider-info">
+						<strong>More Soon, But...</strong>
+						<p class="slider-text">See how you do against my RPS JavaScript Machine</p>
+					</div>
+				</li>
+			</ul>
 		</div>
-	</section>
-	
+	</div>
+</section>
 
-	<!-- <div ng-repeat='item in items'>{{item}}</div> -->
+<section class="module parallax parallax-3">
+	<div class="container" id="resume">
+		<h1>Resume</h1>
+	</div>
+</section>
 
-
-
+<section class="module content" id="resume">
+  <div class="container">
+  	<h2 class="animatetxtd">Click to see my SPA (Single Page Application) Resume made using AngularJS Routing</h2>
+    <form style="display: inline;" action="resume/index.html" method="get">
+    	<button class="metal radial"><i class="fa fa-file-text-o"></i></button>
+    </form>
+  </div>
+</section>
+<footer>
+	<p id="foot"><i class="fa fa-times-circle-o"></i>copyleft 2015 All wrongs reserved</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.js"></script>
-
-<script type="text/javascript" src="js/nameAnimate/bubbles.js"></script>
-<script type="text/javascript" src='js/nameAnimate/animate.js'></script>
-<script type="text/javascript" src='js/app.js'></script>
-<script type="text/javascript" src='js/defaultHeader.js'></script>
-<!-- Controllers -->
-<script type="text/javascript" src='js/MainController.js'></script>
-<script type="text/javascript" src='js/home/homeCtrl.js'></script>
-<script type="text/javascript" src='js/projects/projectsCtrl.js'></script>
-<script type="text/javascript" src='js/resume/resumeCtrl.js'></script>
-<script type="text/javascript" src="js/SoundCloud/mainController.js"></script>
-<!-- Services -->
-<script type="text/javascript" src='js/home/homeService.js'></script>
-<script type="text/javascript" src='js/projects/projectsService.js'></script>
-<script type="text/javascript" src='js/resume/resumeService.js'></script>
-<script type="text/javascript" src="js/SoundCloud/soundService.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
