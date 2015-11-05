@@ -307,7 +307,7 @@ document.Friction = 0.85;
  
 setTimeout(updateCanvasDimensions, 50);
 
-var myName = "Seth Dame";
+var myName = "Breann Brown";
 
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
